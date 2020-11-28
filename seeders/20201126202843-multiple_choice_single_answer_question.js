@@ -18,7 +18,7 @@ module.exports = {
         false_option_2: 'Mekkah',
         false_option_3: 'Madinah',
         correct_option_1: 'Baghdad',
-        img_url: '',
+        img_url: 'https://majalahmissi.files.wordpress.com/2017/02/z_p26-did-u.jpg?w=676',
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -27,7 +27,7 @@ module.exports = {
         false_option_2: 'Yogyakarta',
         false_option_3: 'Palembang',
         correct_option_1: 'Medan',
-        img_url: '',
+        img_url: 'https://eljohnnews.com/wp-content/uploads/2019/08/melayu-batam.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -36,7 +36,7 @@ module.exports = {
         false_option_2: 'Sate Padang',
         false_option_3: 'Dendeng Batokok',
         correct_option_1: 'Bakso Padang',
-        img_url: '',
+        img_url: 'https://blog.airyrooms.com/wp-content/uploads/2018/10/3-01.png',
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -45,7 +45,7 @@ module.exports = {
         false_option_2: 'Melbourne',
         false_option_3: 'New York',
         correct_option_1: 'Canberra',
-        img_url: '',
+        img_url: 'https://u-gob.com/wp-content/uploads/2019/01/Australia-un-ejemplo-de-Transformaci%C3%B3n-Digital.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -63,7 +63,7 @@ module.exports = {
         false_option_2: 'Phuket',
         false_option_3: 'Phnom Penh',
         correct_option_1: 'Bangkok',
-        img_url: '',
+        img_url: 'https://rmol.id/images/berita/normal/2017/10/42647_02195720102017_foto.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       }
@@ -71,11 +71,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete("Multiple_Choice_Single_Answer_Questions", null, {});
   }
 };
