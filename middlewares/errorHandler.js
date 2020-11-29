@@ -1,7 +1,8 @@
 function errorHandler (err, req, res, next) {
     let error = []
     let statusCode = 500
-    console.log(err)
+    error.push(err)
+    res.status(statusCode).json({ error })
 }
 
 module.exports = errorHandler
